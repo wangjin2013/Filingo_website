@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filingo - SEC Filings Viewer for iOS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Filingo</h1>
+            <p>An iOS app focused on US stocks: manage your watchlist, view company details and SEC filings.</p>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>📊 Watchlist Management</h3>
+                    <p>Search and manage your US stock watchlist, with each row showing company name, exchange, and the most recent filing type.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📈 Stock Details</h3>
+                    <p>Company overview + fundamental trends (revenue / net income / EPS from SEC XBRL data) + latest 5 filings.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📋 Filings Browser</h3>
+                    <p>Three-level browsing: Company → Form Type (with counts) → Specific filing.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📄 Filing Reader</h3>
+                    <p>Embedded WebView loads raw documents directly from sec.gov.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="compliance">
+        <div class="container">
+            <h2>Compliance</h2>
+            <p>Filingo only displays data publicly released by the U.S. Securities and Exchange Commission (SEC); it shows no market data.</p>
+
+            <div class="compliance-points">
+                <h3>Data Sources and Legal Basis</h3>
+                <ul>
+                    <li><strong>Only data source: SEC EDGAR</strong></li>
+                    <li>Stock ticker → CIK: <code>https://www.sec.gov/files/company_tickers_exchange.json</code></li>
+                    <li>Filing history: <code>https://data.sec.gov/submissions/CIK##########.json</code></li>
+                    <li>Financial data (XBRL): <code>https://data.sec.gov/api/xbrl/companyfacts/CIK##########.json</code></li>
+                    <li>Filing documents: <code>https://www.sec.gov/Archives/edgar/data/{cik}/{accession}/{document}</code></li>
+                </ul>
+
+                <h3>Copyright Notice</h3>
+                <p>Under 17 U.S.C. §105 and 15 U.S.C. §78ll, SEC filings are U.S. government works and are not subject to copyright. Federal law permits EDGAR information to be used, resold, or redistributed without restriction and without additional fees or royalties.</p>
+                <p><strong>Important note:</strong> Filings may contain third-party content (e.g., licensed material, images, glossaries in exhibits). This app presents SEC documents exactly as filed—no extraction, no reformatting, no relicensing of such content.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="download">
+        <div class="container">
+            <h2>Get Started</h2>
+            <p>Filingo is available for iPhone and iPad (iOS 15.0+).</p>
+            <a href="#" class="btn">Download on the App Store</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Filingo. All rights reserved.</p>
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+        </div>
+    </footer>
+</body>
+</html>
