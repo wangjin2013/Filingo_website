@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术支持 - Filingo</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>技术支持</h1>
+            <a href="index.html" class="back-link">← 返回首页</a>
+            <a href="support.html" class="back-link">English</a>
+        </div>
+    </header>
+
+    <section class="compliance">
+        <div class="container">
+            <h2>联系我们</h2>
+            <p>如果您有问题、发现了缺陷，或者想提建议，请发邮件至
+               <a href="mailto:michael.wangjin2012@gmail.com">michael.wangjin2012@gmail.com</a>。
+               每封邮件我们都会看，但回复可能需要几天。</p>
+            <p>如果您能一并说明设备型号、iOS 版本，以及出问题时您正在做什么，会对我们很有帮助。</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>常见问题</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>为什么应用不显示股价？</h3>
+                    <p>这是刻意为之。Filingo 只展示 SEC 公开的内容——公告，以及公告中申报的财务数字。展示美股行情需要交易所或授权供应商的再分发许可，本应用不持有该许可。本应用中的任何内容都不构成投资建议。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>公告有时加载不出来</h3>
+                    <p>SEC 要求每个自动化客户端声明一个联系地址，未声明的请求会被拒绝。请在
+                       <strong>设置 → SEC 联系邮箱</strong> 中填写一个您能收到邮件的地址。SEC
+                       同时限制客户端的请求频率，所以如果列表返回为空，请稍等片刻再下拉刷新。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>阅读器显示的是一张 sec.gov 的页面，而不是公告本身</h3>
+                    <p>那是 SEC 自己的提示页，当它把请求判定为自动化访问时就会返回，本应用不会存储它。
+                       请返回后重新打开该公告；如果反复出现，换一条公告试试，并确认已按上一条所述填写联系地址。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>如何添加或删除公司？</h3>
+                    <p>iPhone 上打开<strong>自选</strong>标签页，使用右上角的菜单：<em>添加股票</em>或<em>编辑自选</em>。
+                       iPad 上同样的操作在侧边栏上方的 <strong>+</strong> 按钮里。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>如何去掉广告？</h3>
+                    <p><strong>设置 → 去广告</strong>提供一次性买断，可关闭使用同一 Apple ID 登录的所有设备上的全部广告。
+                       如果重装后广告再次出现，请使用<em>恢复购买</em>。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>如何收到新公告的通知？</h3>
+                    <p><strong>设置 → 通知</strong>会开启对自选股中 10-K、10-Q、8-K
+                       新公告的后台检查。检查时机由 iOS 决定，每天最多几次。如果之前拒绝过通知，可在
+                       iOS「设置 → 通知 → Filingo」中重新开启。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>自选股会在设备之间同步吗？</h3>
+                    <p>只有您开启后才会：<strong>设置 → iCloud → 通过 iCloud 同步自选</strong>。
+                       默认关闭，使用的是您自己的 iCloud 账户——不会发送给我们。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>应用在我的设备上存了什么？</h3>
+                    <p>您的自选股与偏好设置，以及 SEC 数据和推荐应用页图片素材的缓存，以便页面加载更快并能离线查看。
+                       删除应用会一并清除。完整说明见<a href="privacy-zh.html">隐私政策</a>。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Filingo. All rights reserved.</p>
+            <p><a href="index.html">首页</a> | <a href="privacy-zh.html">隐私政策</a> | <a href="support.html">English</a></p>
+        </div>
+    </footer>
+</body>
+</html>
